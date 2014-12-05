@@ -1,3 +1,6 @@
+var charsetHelper = require('../helpers/charset.js');
+var fileloaderHelper = require('../helpers/fileloader.js');
+var csvHelper = require('../helpers/csv.js');
 function reloadFiles() {
     var dataPath = 'data/';
     var Path = require('path');
@@ -5,12 +8,15 @@ function reloadFiles() {
         //console.log('data3', data3);
         var splitter = ';';
         readRemoteFile(data3, function secondLayerCsv(data2) {
-            var csvHelper = require('../helpers/csv.js');
             var csvSecondLayer = csvHelper.parseCsv(data2, splitter);
             var listUrls = csvSecondLayer[8][3].trim('\r').split(' ');
-            var fileloaderHelper = require('../helpers/fileloader.js');
+            var downloadAndConvert=function(filename){
+                var fileAbsolutePath= dataPath+Path.basename(filename)
+                var convert=function(){charsetHelper.changeFileCharset(fileAbsolutePath,'cp1251','utf8');}
+                fileloaderHelper.downloadFileAndSaveToDirectoryByWget(listUrls[i],fileAbsolutePath,convert);
+            }
             for(var i = 0;i < listUrls.length;i++){
-                fileloaderHelper.downloadFileAndSaveToDirectoryByWget(listUrls[i],dataPath+Path.basename(listUrls[i]));
+                downloadAndConvert(listUrls[i]);
             }
         });
     });
@@ -20,7 +26,6 @@ function getnumberCapacityListCsvLinks(cb){
     var odataBaseFile = 'http://www.rossvyaz.ru/docs/articles/opendatalist.csv';
     var splitter = ';';
     readRemoteFile(odataBaseFile, function firstLayerCsv(data1){
-        var csvHelper = require('../helpers/csv.js');
         var csvFirstLayer = csvHelper.parseCsv(data1,splitter);
         var url=getCsvUrl(csvFirstLayer[1][2]);
         cb(url);
@@ -33,7 +38,6 @@ function readRemoteFile(link, callback){
         uri: link,
         charset: 'utf8'
     }, function(error, response, body) {
-        var charsetHelper = require('../helpers/charset.js');
         callback(charsetHelper.cp1251ToUtf8(body));
     });
 };
@@ -42,10 +46,20 @@ function getCsvUrl(url){
     return url.substr(0, url.length - 1) + ".csv";
 }
 
+function decodeDataFiles(folder){
+    var fs = require('fs');
+    var fileslist = fs.readdirSync(folder);
+    for(var i = 0;i < fileslist.length;i++){
+        var fileAbsolutePath= folder+'/'+fileslist[i];
+        charsetHelper.changeFileCharset(fileAbsolutePath,'cp1251','utf8');
+    }
+}
+
 module.exports = {
     reloadFiles:reloadFiles,
     getnumberCapacityListCsvLinks:getnumberCapacityListCsvLinks,
     readRemoteFile:readRemoteFile,
-    getCsvUrl:getCsvUrl
+    getCsvUrl:getCsvUrl,
+    decodeDataFiles:decodeDataFiles
 
 }

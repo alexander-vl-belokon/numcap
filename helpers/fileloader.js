@@ -7,7 +7,7 @@ function downloadFileAndSaveToDirectory(source,destination){
     });
 }
 
-function downloadFileAndSaveToDirectoryByWget(source,destination){
+function downloadFileAndSaveToDirectoryByWget(source,destination,afterDownLoad){
     var spawn = require('child_process').spawn;
     var prc = spawn('wget', ['-q',source, '-O', destination]);
     prc.stdout.setEncoding('utf8');
@@ -17,7 +17,8 @@ function downloadFileAndSaveToDirectoryByWget(source,destination){
         console.log(lines.join(""));
     });
     prc.on('close', function (code) {
-        console.log('process exit code ' + code);
+        afterDownLoad();
+        console.log('download process exit code ' + code);
     });
 }
 
