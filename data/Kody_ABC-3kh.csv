@@ -1,0 +1,633 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!--[       E . S o f t       |       http://www.e-soft.ru       |       info@e-soft.ru       ]-->
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+ <meta name="Keywords" content="">
+ <meta name="Description" content="">
+<!--  -->
+<title>Федеральное агентство связи (Россвязь) - Паспорт набора данных «Выписка из реестра Российской системы и плана нумерации»</title>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<link rel="stylesheet" type="text/css" href="/css/counter.css">
+<script type="text/JavaScript" src="/js/common.js"></script>
+<!-- google analytics code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36227408-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- google analytics code end-->
+
+<!--[if IE 8]>
+<style type="text/css">
+
+
+ #hundredthousand
+{
+ margin-top:-70px;
+
+}
+#tenthousand
+{
+ margin-top:-72px;
+
+
+}
+#million_phone
+{
+ margin-top:-8px;
+
+}
+#imagecounter
+{
+ width: 275px;
+}
+#counterdate
+{
+padding-top:112px;
+padding-bottom:20px;
+}
+</style>
+
+<![endif]-->
+<!--[if lt IE 9]>
+<style type="text/css">
+
+
+ #hundredthousand
+{
+ margin-top:-74px;
+
+}
+#tenthousand
+{
+ margin-top:-72px;
+
+
+}
+#thousandths
+{
+ margin-top:-76px;
+
+}
+#counterdate
+{
+padding-top:112px;
+padding-bottom:20px;
+
+}
+
+#imagecounter
+{
+ width: 275px;
+}
+#counterdate_phone
+{
+padding:76px 0px 20px 212px;
+
+}
+</style>
+
+<![endif]-->
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000" >
+<img id="merka" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+<div align="center" class="main">
+<!--<iframe src="http://minsvyaz.ru/ru/iframe/" scrolling="no" frameborder="0" width="987" height="80"></iframe>-->
+
+<div style="background-image:url('/i/bgHead2.gif');background-repeat: repeat-x; padding-top:11px;">
+ <table width="987" border=0 align="center">
+ <tr>
+     <td colspan="4" height="27px" align="right">
+     <span style="padding:6px 6px 6px 0px; position:relative;top:3px; font-size:76%;"><a style="color:#5A5A5A;" href="/sitemap/?abc">Алфавитный указатель</a></span>
+     <span style="padding:6px 6px 6px 4px; font-size:76%;position:relative;top:3px;"><a style="color:#5A5A5A;" href="/sitemap/">Карта сайта</a></span>
+     <span style="padding:6px 6px 6px 7px; font-size:76%; background-color:#f2f2f2;position:relative;top:3px;">Пт, 05 декабря, 2014</span><span style="padding:6px 6px 6px 6px; font-size:76%;background-color:#152944;position:relative;top:3px;"><a style="color:#ffffff;" href="http://eng.rossvyaz.ru">ENG</a></span>
+     </td>
+   </tr>
+   <tr>
+   <td width="38px"></td>
+      <td><a href="/"><img height="128px" width="480px" border="0" src="/i/logo.png" style="" alt="Федеральное агентство связи (Россвязь)" width=""></a></td>
+   <td align="right">
+  <form style="margin:35px 0px 0px 150px;" action="/search/">
+   <table><tr>
+    <td><input style="color:#d3d3e5;" onchange="CheckSearch()" onfocus="CheckSearch()" type="text" name="what" id="what" value="Поиск по сайту"><br><a style="font-size:76%;color:#5A5A5A;" href="/search/">расширенный поиск</td>
+    <td><input type="submit" value="Найти"></td>
+   </tr></table>
+  </form>
+
+ </td>
+ </tr>
+ </table>
+
+ <table width="987"><tr>
+ <td>
+  <table><tr>
+  <td><div id="m1" class="menu"><div class="m"><a href='/' title='Главная'>ГЛАВНАЯ</a></div></div></td>
+<td><div id="m4" onmouseover="menuDown(4)" onmouseout="menuUp(4,'')" class="menu"><div class="m"><a href="/about/">ОБ АГЕНТСТВЕ</a></div></div></td>
+<td><div id="m5" onmouseover="menuDown(5)" onmouseout="menuUp(5,'')" class="menu"><div class="m"><a href="/activity/">ДЕЯТЕЛЬНОСТЬ</a></div></div></td>
+<td><div id="m85" onmouseover="menuDown(85)" onmouseout="menuUp(85,'')" class="menu"><div class="m"><a href="/goszakaz/">ГОСЗАКУПКИ</a></div></div></td>
+<td><div id="m86" onmouseover="menuDown(86)" onmouseout="menuUp(86,'')" class="menu"><div class="m"><a href="/government-service/">ГОССЛУЖБА</a></div></div></td>
+<td><div id="m87" onmouseover="menuDown(87)" onmouseout="menuUp(87,'')" class="menu"><div class="m"><a href="/documents/">ДОКУМЕНТЫ</a></div></div></td>
+<td><div id="m88" onmouseover="menuDown(88)" onmouseout="menuUp(88,'')" class="menu"><div class="m"><a href="/press/">ПРЕСС-ЦЕНТР</a></div></div></td>
+  </tr></table>
+ </td>
+ <td align="right">
+  <table><tr>
+  <td><div class="menug" id="m91" onmouseover="menuDown(91)" onmouseout="menuUp(91,'g')" ><div class="m"><a href="/gosservice/">ГОСУДАРСТВЕННЫЕ УСЛУГИ</a></div></div></td>
+<td><div class="menur" id="m90" onmouseover="menuDown(90)" onmouseout="menuUp(90,'r')" ><div class="m"><a href="/treatments/">ОБРАЩЕНИЯ ГРАЖДАН</a></div></div></td>
+  </tr></table>
+ </td>
+ </tr></table>
+
+</div>
+
+<div class="Lblock">
+ <table id="lbl1" width="987"><tr>
+ <td class="menu">
+      <p class="m3"> <a class="menua"  href='/opendata/7710549038-Rosnumbase/' title='Паспорт набора данных «Выписка из реестра Российской системы и плана нумерации»'><b>Паспорт набора данных «Выписка из реестра Российской системы и плана нумерации»</b></a>&nbsp;<span>&nbsp;|&nbsp;</span>  <a  href='/opendata/7710549038-Rosregdecl/' title='Паспорт набора данных «Реестр зарегистрированных деклараций о соответствии средств связи»'>Паспорт набора данных «Реестр зарегистрированных деклараций о соответствии средств связи»</a>&nbsp;<span>&nbsp;|&nbsp;</span>  <a  href='/opendata/7710549038-Rosapprcert/' title='Паспорт набора данных «Реестр зарегистрированных сертификатов соответствия на средства связи»'>Паспорт набора данных «Реестр зарегистрированных сертификатов соответствия на средства связи»</a>&nbsp;<span>&nbsp;|&nbsp;</span>  <a  href='/opendata/7710549038-Rosperechenpodved/' title='Паспорт набора данных «Перечень подведомственных организаций»'>Паспорт набора данных «Перечень подведомственных организаций»</a></p>
+  <p class="path">Путь:  <a href='/' class=path title='На главную страницу'>Главная страница</a>
+&nbsp;/&nbsp;<nobr>
+<a href='/opendata/' title='Открытые данные'>Открытые данные</a>
+</nobr>
+</p>
+ </td>
+ <td class="topanons" align="left">
+   </td>
+ </tr></table>
+</div>
+
+<table id="lbl2" width="987" border=0>
+ <tr>
+ <td width="645" style="padding: 0px 32px 20px 0px;">
+
+ 
+   <table width="100%" style="margin-top:8px;"><tr>
+  <td><h1>Паспорт набора данных «Выписка из реестра Российской системы и плана нумерации»</h1></td>
+  <td style="padding:30px 0px 0px 10px;" align="center"><table><tr><td class="print"><a style="color:#949393;" target="_blank" href="/opendata/7710549038-Rosnumbase/?print=1">версия&nbsp;для&nbsp;печати</a></td></tr></table></td>
+  </tr></table>
+ 
+  
+  <p>&nbsp;</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td><strong>&nbsp;№&nbsp;</strong></td>
+<td width="213" valign="top">
+<p><strong>&nbsp;Характеристика&nbsp;</strong></p>
+</td>
+<td width="213" valign="top">
+<p><strong>&nbsp;Значение характеристики</strong></p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;1</td>
+<td width="213" valign="top">
+<p>&nbsp;Идентификационный номер (код) набора данных</p>
+</td>
+<td width="213" valign="top">
+<p>&nbsp;7710549038-Rosnumbase</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;2</td>
+<td width="213" valign="top">
+<p>&nbsp;Наименование набора данных</p>
+</td>
+<td width="213" valign="top">
+<p>&nbsp;Выписка из реестра Российской системы и плана нумерации</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;3</td>
+<td width="213" valign="top">
+<p>&nbsp;Описание набора данных</p>
+</td>
+<td width="213" valign="top">
+<p>&nbsp;Выписка из реестра Российской системы и плана нумерации с указанием кодов в субъектах Российской Федерации и кодов сети подвижной радиосвязи, ресурса нумерации, емкости и территории</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;4</td>
+<td>&nbsp;Владелец набора данных</td>
+<td>&nbsp;Россвязь</td>
+</tr>
+<tr>
+<td>&nbsp;5</td>
+<td>&nbsp;Ответственное лицо и способ связи с ним</td>
+<td>
+<p>&nbsp;Начальник Управления государственных<br />услуг в сфере связи Мушкарин Александр Анатольевич,<br />+7(495)986-30-55</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;6</td>
+<td>&nbsp;Ссылка (URL) на набор</td>
+<td><a href="/opendata/7710549038-Rosnumbase/Kody_ABC-3kh.csv">http://www.rossvyaz.ru/opendata/7710549038-Rosnumbase/Kody_ABC-3kh.csv</a>
+<p><a href="/opendata/7710549038-Rosnumbase/Kody_ABC-4kh.csv">http://www.rossvyaz.ru/opendata/7710549038-Rosnumbase/Kody_ABC-4kh.csv</a></p>
+<p><a href="/opendata/7710549038-Rosnumbase/Kody_ABC-8kh.csv">http://www.rossvyaz.ru/opendata/7710549038-Rosnumbase/Kody_ABC-8kh.csv</a></p>
+<a href="/opendata/7710549038-Rosnumbase/Kody_DEF-9kh.csv">http://www.rossvyaz.ru/opendata/7710549038-Rosnumbase/Kody_DEF-9kh.csv</a></td>
+</tr>
+<tr>
+<td>&nbsp;7</td>
+<td>&nbsp;Формат данных</td>
+<td>HTML и CSV</td>
+</tr>
+<tr>
+<td>&nbsp;8</td>
+<td>&nbsp;Структура (модель) данных</td>
+<td><a href="/opendata/7710549038-Rosnumbase/structure-1-2013-06-20.csv">http://www.rossvyaz.ru/opendata/7710549038-Rosnumbase/structure-1-2013-06-20.csv</a>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;9</td>
+<td>&nbsp;Дата первой публикации набора данных</td>
+<td>&nbsp;01.01.2008</td>
+</tr>
+<tr>
+<td>&nbsp;10</td>
+<td>&nbsp;Дата последнего внесения изменений</td>
+<td>&nbsp;01.12.2014</td>
+</tr>
+<tr>
+<td>&nbsp;11&nbsp;</td>
+<td>&nbsp;Содержание последнего изменения</td>
+<td>&nbsp;Обновление набора данных</td>
+</tr>
+<tr>
+<td>&nbsp;12</td>
+<td>
+<p>&nbsp;Ссылка (URL) на предыдущий релиз&nbsp;набора данных, если он есть</p>
+</td>
+<td>&nbsp;null</td>
+</tr>
+<tr>
+<td>&nbsp;13&nbsp;</td>
+<td>&nbsp;Периодичность актуализации набора данных,<br />дней</td>
+<td>&nbsp;Постоянно, 1 раз в месяц</td>
+</tr>
+<tr>
+<td>&nbsp;14</td>
+<td>&nbsp;Ключевые слова, соответствующие содержанию<br />набора данных</td>
+<td>&nbsp;Россвязь, ресурс нумерации, выписка из реестра</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="font-family: Tahoma, 'Arial Cyr', Arial, helvetica, san-serif; font-size: 13px;">Скачать Паспорт<br><a class="docIco" href="/docs/articles/7710549038-Rosnumbase.csv" title="">CSV,&nbsp;4.69 Kb</a><br><small>Размещен: 27.06.2013 14:47, Изменен: 27.06.2013 14:47</small></span></p>
+  
+ </td>
+
+  <td colspan="2" align="center">
+
+  
+
+  <div style="margin-top:22px; background-color:#f1f1f1; padding:12px;">
+   <div align="left" style="background-color:#ffffff; padding:10px 20px 20px 21px; font-size:86%;"><a href="http://www.rossvyaz.ru/opendata/"><img src="/images/1354785930_book_open_64x64_1.png" ></a></div>
+  </div>
+<!--//  <div style="margin-top:22px; background-color:#f1f1f1; padding:12px;">
+   <div align="left" style="background-color:#ffffff; padding:10px 20px 20px 21px; font-size:86%;"><a href="http://www.rossvyaz.ru/press/10letie/"><img src="/images/10let-LOGO.png" style="width:250px;height:120px;"></a></div>
+  </div>//-->
+<div style="margin-top:22px; background-color:#f1f1f1; padding:12px;">
+   <div align="left" style="background-color:#ffffff; padding:0px 0px 0px 19px; font-size:86%;"><a href="http://www.rossvyaz.ru/press/p678/"><img src="/images/oktualno.png" style="width:275px;height:80px;padding: 20px 0px;"></a></div>
+  </div>
+  <div style="margin-top:22px; background-color:#f1f1f1; padding:12px;">
+   <div align="left" id="imagecounterr"><a href=""></a>
+   <h4 id="counterdate">11:00 04.12.2014</h4>
+	<h1 id="million">
+  1</h1><h1 id="hundredthousand">
+  2</h1>
+<h1 id="tenthousand">
+  2</h1>
+<h1 id="thousandths">
+  2</h1>
+<h1 id="hundredths">
+  2</h1>
+<h1 id="tenth">
+  2</h1>
+<h1 id="unit">
+  3</h1>
+<h1 id="million_phone">
+  0</h1><h1 id="hundredthousand_phone">
+  8</h1>
+<h1 id="tenthousand_phone">
+  3</h1>
+<h1 id="thousandths_phone">
+  5</h1>
+<h1 id="hundredths_phone">
+  8</h1>
+<h1 id="tenth_phone">
+  2</h1>
+<h1 id="unit_phone">
+  8</h1>
+   </div>
+   </div>
+
+<div style="margin-top:22px; background-color:#f1f1f1; padding:12px;">
+   <div align="left" style="background-color:#ffffff; padding:10px 20px 20px 21px; font-size:86%;">
+<a href="http://www.rossvyaz.ru/press/news/news1811.htm">
+   	<span style="color:#F8522C;">
+   		<b>Реквизиты платежных документов для перечисления доходов, администрируемых Федеральным агентством связи</b>
+   	</span>
+   </a>
+</div>
+  </div>
+
+
+  <div style="margin-top:22px; background-color:#f1f1f1; padding:12px;">
+   <div align="left" style="background-color:#F4FCFF; padding:10px 20px 20px 21px; font-size:86%;"><a href="/research_section/">Отраслевые научные исследования и разработки</a> - организация возможности для заинтересованных сторон (разработчиков, производителей и потребителей) найти необходимую информацию, а также наладить деловые контакты.</div>
+  </div>
+
+
+  <div style="margin-top:22px; background-color:#f1f1f1; padding:12px;">
+   <div align="left" style="background-color:#ffffff; padding:10px 20px 20px 21px; font-size:86%;"><a href="/press/news/news262.htm">Порядок представления операторами связи информации о технологических возможностях своих сетей связи</a></div>
+  </div>
+
+  <div style="margin-top:22px; background-color:#f1f1f1; padding:12px;">
+  <a target="_blank" title="Открытое правительство" href="/about/p666/"><img src="/images/anons/image14.png" width="306" height="106" vspace="7" border="0" alt=""></a><br>
+<a target="_blank" title="Официальный интернет-портал правовой информации" href="http://www.pravo.gov.ru/"><img src="/images/anons/image12.jpg" width="306" height="72" vspace="7" border="0" alt=""></a><br>
+  <!-- widget start -->
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+<link rel="stylesheet" type="text/css" href="http://gosmonitor.ru/widget/widget.css?
+
+id=58&amp;position=right_center" />
+
+<script type="text/javascript" src="http://gosmonitor.ru/widget.php?id=58&amp;position=right_center&amp;clr1=293c9e"></script>
+
+<!-- / widget end -->
+  </div>
+    <a class="twitter-timeline" href="https://twitter.com/rossvyaz_news" data-widget-id="274823301891751937">Твиты пользователя @rossvyaz_news</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+ </td>
+ 
+ </tr>
+
+ <tr>
+  <td colspan="2">
+  	<p style="font-size:86%;"><small>
+	Время создания страницы: 19.06.2013 15:29<br>Последнее изменение: 04.12.2014 11:35	</small></p>
+  </td>
+ </tr>
+
+ <tr>
+ <td>
+
+ <p style="margin: 30px 0px 0px 0px; padding-top:30px; border-top: solid 1px #efefef; font-size:90%;"><b>Федеральное агентство связи</b></p>
+ <p style="color:#5f5f5f; font-size:86%;">
+  109289, г. Москва, Николоямский пер., 3а стр. 2 <br>
+  <a href="/about/contacts/">Контактная информация</a><br></p>
+
+ <p><small>© Официальный Интернет-ресурс Федерального агентства связи <br>(Официальный сайт Россвязи), 2009-2014. Все права защищены.<br>Свидетельство о регистрации СМИ Эл №ФС77-38516 от 17 декабря 2009 г.<br></small></p>
+
+ </td>
+ <td style="padding:64px 0px 0px 12px;">
+
+	<!-- begin of Top100 logo -->
+	<a href="http://top100.rambler.ru/home?id=1945519">
+	<img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-gray2.gif" alt="Rambler's Top100"
+	width="88" height="31" border="0" /></a>
+	<!-- end of Top100 logo -->
+
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=25314086&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/25314086/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:25314086,lang:'ru'});return false}catch(e){}"/></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter25314086 = new Ya.Metrika({id:25314086,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/25314086" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+ </td>
+ </tr>
+ </table>
+
+</div>
+
+ 
+    	<div id="smenu1" class="menuPopUp" onmouseout="menuUp(1,'')" onmouseover="menuDown(1)">
+    	<dl class="smenu">
+    	
+    	</dl>
+    	<img id="merka1" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+     
+    	<div id="smenu4" class="menuPopUp" onmouseout="menuUp(4,'')" onmouseover="menuDown(4)">
+    	<dl class="smenu">
+    	<dt><a  href='/about/main/' title='Положение об Агентстве'>Положение</a>
+<dt><a  href='/about/structure/' title='Структура Агентства'>Структура</a>
+<dt><a  href='/about/management/' title='Руководство Агентства'>Руководство</a>
+<dt><a  href='/about/registers/' title='Реестры, информационные системы, базы данных'>Информационные ресурсы</a>
+<dt><a  href='/about/organizations/' title='Подведомственные организации'>Подведомственные организации</a>
+<dt><a  href='/about/Comission/' title='Консультативные и совещательные органы'>Консультативные и совещательные органы</a>
+<dt><a  href='/about/smezhnye/' title='Смежные по компетенции органы государственной власти'>Смежные по компетенции органы государственной власти</a>
+<dt><a  href='/about/stats/' title='Статистические данные о деятельности Россвязи'>Статистические данные</a>
+<dt><a  href='/about/history/' title='Россвязь год за годом'>Россвязь год за годом</a>
+<dt><a  href='/about/contacts/' title='Контакты'>Контакты</a>
+<dt><a  href='/about/p666/' title='Открытое правительство'>Открытое правительство</a>
+
+    	</dl>
+    	<img id="merka4" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+     
+    	<div id="smenu5" class="menuPopUp" onmouseout="menuUp(5,'')" onmouseover="menuDown(5)">
+    	<dl class="smenu">
+    	<dt><a  href='/activity/uus/' title='Универсальные услуги связи'>Универсальные услуги связи</a>
+<dt><a  href='/activity/num_resurs/' title='Выделение и использование ресурса нумерации'>Ресурс нумерации</a>
+<dt><a  href='/activity/correlation/' title='Подтверждение соответствия средств связи'>Подтверждение соответствия</a>
+<dt><a  href='/activity/marks/' title='Выпуск государственных знаков почтовой оплаты'>Государственные знаки почтовой оплаты</a>
+<dt><a  href='/activity/programms/' title='Федеральная адресная инвестиционная программа'>Федеральная адресная инвестиционная программа</a>
+<dt><a  href='/activity/emergency/' title='Выполнение мероприятий при возникновении чрезвычайных ситуаций'>Мероприятия при чрезвычайных ситуациях</a>
+<dt><a  href='/activity/post/' title='Развитие сети почтовой связи'>Развитие сети почтовой связи</a>
+<dt><a  href='/activity/satellite/' title='Развитие сети спутниковой связи'>Развитие сети спутниковой связи</a>
+<dt><a  href='/activity/teleradio/' title='Развитие теле и радиовещания'>Развитие сети теле- и радиовещания</a>
+<dt><a  href='/activity/national_trust/' title='Управление государственным имуществом'>Управление госимуществом</a>
+<dt><a  href='/activity/cooperation/' title='Взаимодействие с иными органами и объединениями'>Взаимодействие с иными органами и объединениями</a>
+<dt><a  href='/activity/international_activities/' title='Международная деятельность Агентства'>Международная деятельность</a>
+<dt><a  href='/activity/checks/' title='Проведение проверок'>Проведение проверок</a>
+<dt><a  href='/activity/p319/' title='Исполнение федерального бюджета'>Исполнение федерального бюджета</a>
+<dt><a  href='/activity/p367/' title='Планы и прогнозы'>Планы и прогнозы</a>
+<dt><a  href='/activity/fighting_corruption/' title='Противодействие коррупции'>Противодействие коррупции</a>
+<dt><a  href='/activity/p682/' title=''>Развитие Республики Крым и города Севастополя</a>
+
+    	</dl>
+    	<img id="merka5" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+     
+    	<div id="smenu85" class="menuPopUp" onmouseout="menuUp(85,'')" onmouseover="menuDown(85)">
+    	<dl class="smenu">
+    	<dt><a  href='/goszakaz/p321/' title='Проведение конкурсов, запросов котировок и аукционов'>Проведение конкурсов, запросов котировок и аукционов</a>
+<dt><a  href='/goszakaz/p113/' title='Планы-графики размещения заказов'>Планы-графики размещения заказов</a>
+<dt><a  href='/goszakaz/p114/' title='Объявления о торгах'>Объявления о торгах</a>
+<dt><a  href='/goszakaz/reestr_contr/' title='Реестр государственных контрактов'>Реестр государственных контрактов</a>
+
+    	</dl>
+    	<img id="merka85" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+     
+    	<div id="smenu86" class="menuPopUp" onmouseout="menuUp(86,'')" onmouseover="menuDown(86)">
+    	<dl class="smenu">
+    	<dt><a  href='/government-service/vacancy/' title='Перечень вакантных должностей'>Перечень вакантных должностей</a>
+<dt><a  href='/government-service/concurs/' title='Конкурсы на замещение вакантных должностей'>Конкурсы на замещение вакантных должностей</a>
+<dt><a  href='/government-service/p118/' title='Порядок поступления на службу'>Порядок поступления на службу</a>
+<dt><a  href='/government-service/p123/' title='Квалификационные требования'>Квалификационные требования</a>
+<dt><a  href='/government-service/p340/' title='Порядок рассмотрения служебных споров'>Порядок рассмотрения служебных споров</a>
+<dt><a  href='/government-service/p174/' title='Комиссия Федерального агентства связи по соблюдению требований к служебному поведению государственных гражданских служащих и урегулированию конфликта интересов'>Комиссия по служебному поведению</a>
+<dt><a  href='/government-service/educational_institutions/' title='Отраслевое образование'>Отраслевое образование</a>
+<dt><a  href='/government-service/p298/' title='Сведения о доходах'>Сведения о доходах</a>
+
+    	</dl>
+    	<img id="merka86" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+     
+    	<div id="smenu87" class="menuPopUp" onmouseout="menuUp(87,'')" onmouseover="menuDown(87)">
+    	<dl class="smenu">
+    	<dt><a  href='/documents/federal_law/' title='Федеральные законы'>Федеральные законы</a>
+<dt><a  href='/documents/decrees/' title='Указы Президента Российской Федерации'>Указы Президента РФ</a>
+<dt><a  href='/documents/resolutions/' title='Постановления и распоряжения Правительства Российской Федерации'>Постановления и распоряжения Правительства РФ</a>
+<dt><a  href='/documents/p129/' title='Приказы Министерства связи и массовых коммуникаций Российской Федерации'>Приказы Министерства связи и массовых коммуникаций</a>
+<dt><a  href='/documents/p130/' title='Приказы Федерального агентства связи'>Приказы Федерального агентства связи</a>
+<dt><a  href='/documents/reglaments/' title='Административные регламенты'>Административные регламенты</a>
+<dt><a  href='/documents/p132/' title='Установленные формы обращений, заявлений и иных документов, принимаемых к рассмотрению Россвязью'>Формы документов</a>
+<dt><a  href='/documents/p133/' title='Порядок обжалования нормативных правовых актов и иных решений, принятых государственным органом'>Порядок обжалования решений, принятых Россвязью</a>
+<dt><a  href='/documents/p134/' title='Проекты документов'>Проекты документов</a>
+<dt><a  href='/documents/docs_other/' title='Прочие документы'>Прочие документы</a>
+<dt><a  href='/documents/p317/' title='Сведения о судебных постановлениях'>Сведения о судебных постановлениях</a>
+
+    	</dl>
+    	<img id="merka87" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+     
+    	<div id="smenu88" class="menuPopUp" onmouseout="menuUp(88,'')" onmouseover="menuDown(88)">
+    	<dl class="smenu">
+    	<dt><a  href='/press/news/' title='Новости'>Новости</a>
+<dt><a  href='/press/photo/' title='Видео - и фотоотчеты'>Видео - и фотоотчеты</a>
+<dt><a  href='/press/10letie/' title='Россвязь 10 лет'>Россвязь 10 лет</a>
+<dt><a  href='/press/visits/' title='Официальные визиты и поездки руководства Агентства'>Официальные визиты и поездки руководства</a>
+<dt><a  href='/press/p139/' title='Тексты официальных выступлений'>Тексты официальных выступлений</a>
+<dt><a  href='/press/reports/' title='Годовые отчеты'>Годовые отчеты</a>
+<dt><a  href='/press/archive/' title='Архив новостей'>Архив новостей</a>
+<dt><a  href='/press/Otraslevye_izdania/' title='Отраслевые издания'>Отраслевые издания</a>
+<dt><a  href='/press/SMI_Rossvyaz/' title='СМИ Россвязи'>СМИ Россвязи</a>
+<dt><a  href='/press/p374/' title='Словарь терминов'>Словарь терминов</a>
+<dt><a  href='/press/p678/' title='Актуальная информация для операторов связи'>Актуальная информация для операторов связи</a>
+
+    	</dl>
+    	<img id="merka88" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+     
+    	<div id="smenu91" class="menuPopUp" onmouseout="menuUp(91,'g')" onmouseover="menuDown(91)">
+    	<dl class="smenu">
+    	<dt><a  href='/gosservice/gosuslugi/' title='Полный перечень услуг'>Полный перечень услуг</a>
+<dt><a  href='/gosservice/p377/' title='Услуги для юридических лиц'>Услуги для юридических лиц</a>
+<dt><a  href='/gosservice/p378/' title='Услуги для физических лиц'>Услуги для физических лиц</a>
+
+    	</dl>
+    	<img id="merka91" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+     
+    	<div id="smenu90" class="menuPopUp" onmouseout="menuUp(90,'r')" onmouseover="menuDown(90)">
+    	<dl class="smenu">
+    	<dt><a  href='/treatments/p144/' title='Порядок обращений в Россвязь'>Порядок обращений в Россвязь</a>
+<dt><a  href='/treatments/p145/' title='Личный прием граждан'>Личный прием граждан</a>
+<dt><a  href='/treatments/feedback/' title='Обращения в электронном виде'>Обращения в электронном виде</a>
+<dt><a  href='/treatments/p147/' title='Обзоры обращений'>Обзоры обращений</a>
+<dt><a  href='/treatments/p318/' title='Порядок и сроки рассмотрения обращений'>Порядок и сроки рассмотрения обращений</a>
+<dt><a  href='/treatments/FAQ/' title='Часто задаваемые вопросы'>Часто задаваемые вопросы</a>
+
+    	</dl>
+    	<img id="merka90" src="/i/inter.gif" width="1" height="1" border="0" alt="" align="right">
+    	</div>
+    
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?1945519"></script>
+<noscript>
+<img src="http://counter.rambler.ru/top100.cnt?1945519" alt="" width="1" height="1" border="0" />
+</noscript>
+<!-- end of Top100 code -->
+<!-- Yandex.Metrika counter -->
+<!--//<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter18155797 = new Ya.Metrika({id:18155797,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/18155797" style="position:absolute; left:-9999px;" alt="" /></div></noscript>//-->
+<!-- /Yandex.Metrika counter -->
+
+
+
+<!-- google analytics code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36227408-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- google analytics code end-->
+
+<iframe src="http://minsvyaz.ru/ru/iframe/" scrolling="no" frameborder="0" width=100% height="140"></iframe>
+
+</body>
+</html>
