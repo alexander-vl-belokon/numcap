@@ -5,11 +5,10 @@ function reloadFiles() {
     var dataPath = 'data/';
     var Path = require('path');
     getnumberCapacityListCsvLinks(function getListCsvUrls(data3) {
-        //console.log('data3', data3);
         var splitter = ';';
         readRemoteFile(data3, function secondLayerCsv(data2) {
             var csvSecondLayer = csvHelper.parseCsv(data2, splitter);
-            var listUrls = csvSecondLayer[8][3].trim('\r').split(' ');
+            var listUrls = csvSecondLayer[8][3].trim('\r').replace('/ru/','/').split(' ');//delete block replace('/ru/','/') when mistake in oData passport will be repaired
             var downloadAndConvert=function(filename){
                 var fileAbsolutePath= dataPath+Path.basename(filename)
                 var convert=function(){charsetHelper.changeFileCharset(fileAbsolutePath,'cp1251','utf8');}

@@ -14,7 +14,7 @@ schema = {
 function convert() {
     var dataDir = 'data/';
     var filesList = getCsvFileslist(dataDir);
-    for (var i = 1; i < filesList.length; i++) {
+    for (var i = 0; i < filesList.length; i++) {
         var filepath = dataDir + filesList[i];
         convertCsvDataToJson(filepath);
     }
