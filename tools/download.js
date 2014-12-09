@@ -1,6 +1,6 @@
-var charsetHelper = require('../helpers/charset.js');
-var fileloaderHelper = require('../helpers/fileloader.js');
-var csvHelper = require('../helpers/csv.js');
+var charsetHelper = require('./helpers/charset.js');
+var fileloaderHelper = require('./helpers/fileloader.js');
+var csvHelper = require('./helpers/csv.js');
 function reloadFiles() {
     var dataPath = 'data/';
     var Path = require('path');

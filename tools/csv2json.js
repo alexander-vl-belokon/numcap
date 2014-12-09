@@ -1,5 +1,5 @@
-var fileloaderHelper = require('../helpers/fileloader.js');
-var csvHelper = require('../helpers/csv.js');
+var fileloaderHelper = require('./helpers/fileloader.js');
+var csvHelper = require('./helpers/csv.js');
 var fs = require('fs');
 
 schema = {
