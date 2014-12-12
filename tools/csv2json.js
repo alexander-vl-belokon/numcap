@@ -43,7 +43,7 @@ function getCsvFileslist(dataDir) {
     var fs = require('fs');
     var fileslist = fs.readdirSync(dataDir);
     for (var i = 0; i < fileslist.length; i++) {
-        console.log(fileslist[i]);
+        //console.log(fileslist[i]);
         if (fileslist[i].lastIndexOf(".csv") != -1) {
             csvFilesList.push(fileslist[i]);
         }

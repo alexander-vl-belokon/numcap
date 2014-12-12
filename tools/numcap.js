@@ -1,15 +1,5 @@
 var fs = require('fs');
 
-Numcap.prototype.defaultConnection = {
-    'type': '',
-    'options': {
-        'fileType': '.json',
-        'dataDirectory': 'data/'
-    }
-};
-Numcap.prototype.connection = {};
-Numcap.prototype.connectionFiletype = '';
-
 /*
  * schema:
  * connection = {'type':'',
@@ -24,11 +14,21 @@ function Numcap(connection) {
         if (connection.type === 'file') {
             this.connectionFiletype = connection.options.fileType;
         }
-    }
-    else {
+    } else {
         this.connection = this.defaultConnection;
     }
 }
+
+Numcap.prototype.defaultConnection = {
+    'type': '',
+    'options': {
+        'fileType': '.json',
+        'dataDirectory': 'data/'
+    }
+};
+Numcap.prototype.connection = {};
+Numcap.prototype.connectionFiletype = '';
+
 
 Numcap.prototype.getOperator = function (number) {
     var foundCapacityObjects = this.basicSearchByNumber(number);
