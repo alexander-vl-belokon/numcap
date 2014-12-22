@@ -6,15 +6,13 @@ var url = 'mongodb://localhost:27017/capacity';
 
 function convert() {
     var filesNames = fileloaderHelper.getFilelistByExtension(dataDirectory, 'json');
-    //var dataDirectory = dataDirectory;
-    //var url = 'mongodb://localhost:27017/capacity';
     MongoClient.connect(url, function (err, db) {
         var collection = db.collection('capacities');
         var insertFileInDb = function (filename,callback) {
             var fileName = dataDirectory + filename;
             var fileContentAsJson = JSON.parse(fs.readFileSync(fileName, 'utf8'));
-            fileContentAsJson.map(function (item) {
-                return {
+            var convertedFileContentAsJson = fileContentAsJson.map(function (item) {
+                return  {
                     "code": parseInt(item.code),
                     "beginNumber": parseInt(item.beginNumber),
                     "endNumber": parseInt(item.endNumber),
@@ -23,7 +21,7 @@ function convert() {
                     "region": item.region
                 };
             });
-            collection.insert(fileContentAsJson, function (err, result) {
+            collection.insert(convertedFileContentAsJson, function (err, result) {
                 if (err) {
                     console.log(err);
                 } else {
