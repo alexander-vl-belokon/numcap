@@ -1,6 +1,8 @@
 var charsetHelper = require('./helpers/charset.js');
 var fileloaderHelper = require('./helpers/fileloader.js');
 var csvHelper = require('./helpers/csv.js');
+
+
 function reloadFiles() {
     var dataPath = 'data/';
     var Path = require('path');
@@ -14,6 +16,7 @@ function reloadFiles() {
                 var convert=function(){charsetHelper.changeFileCharset(fileAbsolutePath,'cp1251','utf8');}
                 fileloaderHelper.downloadFileAndSaveToDirectoryByWget(listUrls[i],fileAbsolutePath,convert);
             }
+            
             for(var i = 0;i < listUrls.length;i++){
                 downloadAndConvert(listUrls[i]);
             }

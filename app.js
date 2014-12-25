@@ -11,6 +11,22 @@ var region = nc1.getRegion(number);
 console.log('Region: ', region);
 
 
+var nc3 = new Numcap({
+	type: 'file2', 
+	options: {
+        'fileType': '.json',
+        'dataDirectory': 'data/'
+	    }
+	});
+
+var operator = nc3.getOperator(number);
+console.log('Operator: ', operator);
+
+var region = nc3.getRegion(number);
+console.log('Region: ', region);
+
+
+
 //Mongodb variant:
 
 var nc2 = new Numcap({'type': 'mongodb'});

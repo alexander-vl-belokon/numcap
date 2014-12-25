@@ -1,5 +1,7 @@
 var fs = require('fs');
 var MongoClient = require('mongodb').MongoClient;
+var file = require('../dataSource/file');
+
 /*
  * schema:
  * connection = {'type':'',
@@ -10,9 +12,14 @@ var MongoClient = require('mongodb').MongoClient;
  *
  * */
 function Numcap(connection) {
+
+    this.dataSource = null;
+    this.connection = {};
+
     if (connection) {
-        if (connection.type === 'file') {
-            this.connectionFiletype = connection.options.fileType;
+        if (connection.type === 'file2') {
+            this.dataSource = new require('../dataSource/file')(connection.options);           
+           
         } else if (connection.type === 'mongodb') {
             this.connection = {
                 'type': 'mongodb',
@@ -37,11 +44,10 @@ Numcap.prototype.defaultConnection = {
     }
 };
 
-Numcap.prototype.connection = {};
 
-Numcap.prototype.connectionFiletype = '';
 
 Numcap.prototype.getOperator = function () {
+
     var args = Array.prototype.slice.call(arguments, 0);
     if (args.length === 2) {
         if (args[1] instanceof Function) {
@@ -96,7 +102,7 @@ Numcap.prototype.mongoSearchByNumber = function (number, field, callback) {
     var url = 'mongodb://' + connection.options.host + ':' + connection.options.port + '/' + connection.options.db;
     var documents = {};
     
-    MongoClient.connect(url, function (err, db) {        
+    MongoClient.connect(url, function (err, db) {
         var collection = db.collection(connection.options.collection);
         
         var query = {
@@ -183,7 +189,8 @@ Numcap.prototype.getFileNameByFirstDigit = function (digit) {
     var filename = '';
     var fileslist = fs.readdirSync(this.connection.options.dataDirectory);
     for (var i = 0; i < fileslist.length; i++) {
-        if (fileslist[i].lastIndexOf(this.connection.options.fileType) != -1 && fileslist[i].lastIndexOf(digit) != -1) {
+        if (fileslist[i].lastIndexOf(this.connection.options.fileType) != -1 
+            && fileslist[i].lastIndexOf(digit) != -1) {
             filename = fileslist[i];
         }
     }
