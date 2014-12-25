@@ -36,9 +36,10 @@ Numcap.prototype.defaultConnection = {
         'dataDirectory': 'data/'
     }
 };
-Numcap.prototype.connection = {};
-Numcap.prototype.connectionFiletype = '';
 
+Numcap.prototype.connection = {};
+
+Numcap.prototype.connectionFiletype = '';
 
 Numcap.prototype.getOperator = function () {
     var args = Array.prototype.slice.call(arguments, 0);
@@ -94,22 +95,31 @@ Numcap.prototype.mongoSearchByNumber = function (number, field, callback) {
     var connection = this.connection;
     var url = 'mongodb://' + connection.options.host + ':' + connection.options.port + '/' + connection.options.db;
     var documents = {};
-    MongoClient.connect(url, function (err, db) {
+    
+    MongoClient.connect(url, function (err, db) {        
         var collection = db.collection(connection.options.collection);
+        
         var query = {
             code: parseInt(numberStruct.code),
-            endNumber: {$gte: parseInt(numberStruct.number)},
-            beginNumber: {$lte: parseInt(numberStruct.number)}
+            endNumber: {
+                $gte: parseInt(numberStruct.number)
+            },
+            beginNumber: {
+                $lte: parseInt(numberStruct.number)
+            }
         };
+
         collection.find(query).toArray(function (err, docs) {
+            
             var result = '';
             if (docs.length > 0) {
                 result = docs.pop();
                 result = result[field];
             }
-            callback(result);
+            callback(err, result);
             db.close();
         });
+
     });
 }
 
