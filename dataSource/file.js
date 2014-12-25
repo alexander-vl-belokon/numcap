@@ -35,7 +35,7 @@ var file = function (options) {
             encoding = 'utf8';
 
         if (!checkStructure(structure)) throw new Error('Check structure of number');
-        
+
         getFilePath(structure, function (filepath) {
             fs.readFile(filepath, encoding, function (err, data) {
                 if (err) throw err;
@@ -57,13 +57,5 @@ var file = function (options) {
         getData: getData
     }
 }
-
-
-var q = new file({dataDirectory: '../data'});
-
-q.getData({code:'391', number: '2148000'}, function (err,data) {
-    console.log(err, data);
-});
-
 
 module.exports = file;
