@@ -6,7 +6,7 @@ var csvHelper = require('./helpers/csv.js');
 function reloadFiles() {
     var dataPath = 'data/';
     var Path = require('path');
-    getnumberCapacityListCsvLinks(function getListCsvUrls(data3) {
+    getnumberCapacityListCsvLinks(function (data3) {
         var splitter = ';';
         readRemoteFile(data3, function secondLayerCsv(data2) {
             var csvSecondLayer = csvHelper.parseCsv(data2, splitter);
@@ -63,5 +63,4 @@ module.exports = {
     readRemoteFile:readRemoteFile,
     getCsvUrl:getCsvUrl,
     decodeDataFiles:decodeDataFiles
-
 }

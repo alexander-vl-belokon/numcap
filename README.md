@@ -6,7 +6,6 @@ Number capacity of phone operators in Russian Federation
 *Possibilities*
 
 1. Find region by number
-
 2. Find phone operator by number
 
 
