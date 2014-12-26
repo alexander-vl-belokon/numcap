@@ -1,11 +1,3 @@
-function cp1251ToUtf8(text){
-    var Iconv = require('iconv').Iconv;
-    var fromEnc = 'WINDOWS-1251';
-    var toEnc = 'UTF-8';
-    var translator = new Iconv(fromEnc,toEnc);
-    return translator.convert(text).toString();
-}
-
 function changeFileCharset(source,fromCharset,toCharset){
     var spawn = require('child_process').spawn;
     var iconv = spawn('iconv', ['-f',fromCharset, '-t', toCharset, source,'-o', source+'_']);
@@ -24,6 +16,5 @@ function changeFileCharset(source,fromCharset,toCharset){
 }
 
 module.exports = {
-    cp1251ToUtf8:cp1251ToUtf8,
     changeFileCharset:changeFileCharset
 }

@@ -23,5 +23,8 @@
   "dependencies": {
     "mongodb": "^1.4.26",
     "phone-number-format": "0.0.3"
+  },
+  "devDependencies": {
+    "request": "^2.51.0"
   }
 }
