@@ -1,6 +1,7 @@
 
 var file = require('./file');
 var mongo = require('./mongo');
+var pnf = require('phone-number-format');
 
 
 function Numcap(connection) {
@@ -23,8 +24,12 @@ Numcap.prototype.defaultConnection = {
 };
 
 Numcap.prototype.getData = function(number, callback){
-    var structure = this.getStructureOfNumber(number);
-    this.dataSource.getData(structure, callback);
+    if(!pnf.isValid(number)) {
+        callback(new Error('Not valid number format'));
+    } else {
+        var structure = this.getStructureOfNumber(number);
+        this.dataSource.getData(structure, callback);
+    }
 }
 
 Numcap.prototype.getStructureOfNumber = function (number) {

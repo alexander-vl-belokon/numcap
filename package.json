@@ -21,6 +21,7 @@
     "url": "https://github.com/alexander-vl-belokon/numcap/issues"
   },
   "dependencies": {
-    "mongodb": "^1.4.26"
+    "mongodb": "^1.4.26",
+    "phone-number-format": "0.0.3"
   }
 }
