@@ -3,13 +3,17 @@ var file = require('./file');
 var mongo = require('./mongo');
 var pnf = require('phone-number-format');
 
-
-function Numcap(connection) {
-    if (connection) {
-        if (connection.type === 'file') {
-            this.dataSource = new file(connection.options);           
-        } else if (connection.type === 'mongodb') {
-            this.dataSource = new mongo(connection.options);
+function Numcap (connection) {
+    if (connection && connection['type']) {
+        switch (connection['type']){
+            case 'mongo':
+                this.dataSource = new mongo(connection.options);
+                break;
+            case 'file':
+                this.dataSource = new file(connection.options);
+                break;
+            default:
+                throw new Error('Unknown type of connection');
         }
     } else {
         this.connection = this.defaultConnection;
@@ -23,7 +27,7 @@ Numcap.prototype.defaultConnection = {
     }
 };
 
-Numcap.prototype.getData = function(number, callback){
+Numcap.prototype.getData = function (number, callback){
     if(!pnf.isValid(number)) {
         callback(new Error('Not valid number format'));
     } else {
@@ -33,31 +37,15 @@ Numcap.prototype.getData = function(number, callback){
 }
 
 Numcap.prototype.getStructureOfNumber = function (number) {
+
+    var numberString = pnf.normalize(number);
+
     var struct = {
-        prefix: '',
-        code: '',
-        number: ''
+        prefix: numberString.slice(0, 1),
+        code: numberString.slice(1, 4),
+        number: numberString.slice(4)
     };
 
-    var numberString = String(number);
-    
-    if (numberString.length === 12 && numberString.charAt(0) === '+') {
-        struct.prefix = numberString.slice(0, 2);
-        struct.code = numberString.slice(2, 5);
-        struct.number = numberString.slice(5);
-    }
-    else if (numberString.length === 11) {
-        struct.prefix = numberString.slice(0, 1);
-        struct.code = numberString.slice(1, 4);
-        struct.number = numberString.slice(4);
-    }
-    else if (numberString.length === 10) {
-        struct.code = numberString.slice(0, 4);
-        struct.number = numberString.slice(4);
-    }
-    else {
-        console.log('Error number format !');
-    }
     return struct;
 }
 
