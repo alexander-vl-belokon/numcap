@@ -1,7 +1,7 @@
 numcap
 ======
 
-Number capacity of phone operators in Russian Federation
+Phone numbers of all operators in Russian Federation
 
 *Possibilities*
 
@@ -17,9 +17,36 @@ Install
 Usage
 =====
 `````
-var Numcap = require('numcap');
-var numberFinder = new Numcap();
-console.log('operator', numberFinder.getOperator('+7XXXXXXXXXX'));
-console.log('region', numberFinder.getRegion('+7XXXXXXXXXX'));
+var numcap = require('numcap');
+
+var finder = new numcap({type: 'file', options: {dataDirectory: '../data'}});
+
+finder.getData("8-913-529-29-26", function (err, data) {
+    console.log(err, data);
+});
+
+finder.getData("56576567", function (err, data) {
+    console.log(err, data);
+});
 
 `````
+
+DATA
+====
+
+numcap contain JSON files with data of resource
+but you can use ncli.js for update data
+
+Update
+======
+
+> node ncli.js --download
+> node ncli.js --csv2json
+
+Use mongodb
+===========
+load data to mongodb use ncli.j
+
+> node ncli.js --json2mongo
+
+
