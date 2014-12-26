@@ -60,7 +60,7 @@ Numcap.prototype.getOperator = function () {
     else if (args.length === 1) {
         var number = args[0];
         var foundCapacityObjects = this.searchCapacityObjects(number);
-        return foundCapacityObjects.pop().region;
+        return foundCapacityObjects.pop().operator;
     }
 }
 
@@ -106,13 +106,9 @@ Numcap.prototype.mongoSearchByNumber = function (number, field, callback) {
         var collection = db.collection(connection.options.collection);
         
         var query = {
-            code: parseInt(numberStruct.code),
-            endNumber: {
-                $gte: parseInt(numberStruct.number)
-            },
-            beginNumber: {
-                $lte: parseInt(numberStruct.number)
-            }
+            code: numberStruct.code,
+            endNumber: {$gte: numberStruct.number},
+            beginNumber: {$lte: numberStruct.number}
         };
 
         collection.find(query).toArray(function (err, docs) {

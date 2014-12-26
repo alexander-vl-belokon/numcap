@@ -1,15 +1,18 @@
 var charsetHelper = require('./helpers/charset.js');
 var fileloaderHelper = require('./helpers/fileloader.js');
 var csvHelper = require('./helpers/csv.js');
+
 var path = require('path');
 var request = require("request");
 
 function reloadFiles () {
 
+
     var dataPath = 'data/';
     
     getnumberCapacityListCsvLinks(function (url) {
         var splitter = ';';
+
         readRemoteFile(url, function (data) {
 
             var csvSecondLayer = csvHelper.parseCsv(data, splitter);
@@ -27,6 +30,7 @@ function reloadFiles () {
             }
             
             for(var i = 0; i < listUrls.length; i++){
+
                 downloadAndConvert(listUrls[i]);
             }            
         });
