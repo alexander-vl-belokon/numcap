@@ -5,7 +5,7 @@ var fs = require('fs');
 var file = function (options) {
 
     var getDataDirectory = function(){
-        return options['dataDirectory'] || 'data';
+        return options['dataDirectory'] || './data';
     };
 
     var checkStructure = function (structure) {
