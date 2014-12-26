@@ -1,7 +1,7 @@
 
-var file = require('./file');
-var mongo = require('./mongo');
-var numcap = require('./numcap');
+var file = require('../lib/file');
+var mongo = require('../lib/mongo');
+var numcap = require('../lib/numcap');
 
 
 var q1 = new file({dataDirectory: '../data'});
