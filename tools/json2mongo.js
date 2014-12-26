@@ -8,6 +8,9 @@ function convert() {
     var filesNames = fileloaderHelper.getFilelistByExtension(dataDirectory, 'json');
     MongoClient.connect(url, function (err, db) {
         var collection = db.collection('capacities');
+        collection.remove({},function(err,result){
+            console.log("Removeing old records...");
+        });
         var insertFileInDb = function (filename,callback) {
             var fileName = dataDirectory + filename;
             var fileContentAsJson = JSON.parse(fs.readFileSync(fileName, 'utf8'));

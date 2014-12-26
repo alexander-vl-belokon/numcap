@@ -1,6 +1,8 @@
 var charsetHelper = require('./helpers/charset.js');
 var fileloaderHelper = require('./helpers/fileloader.js');
 var csvHelper = require('./helpers/csv.js');
+
+
 function reloadFiles() {
     var dataPath = 'data/';
     var Path = require('path');
@@ -8,12 +10,13 @@ function reloadFiles() {
         var splitter = ';';
         readRemoteFile(data3, function secondLayerCsv(data2) {
             var csvSecondLayer = csvHelper.parseCsv(data2, splitter);
-            var listUrls = csvSecondLayer[8][3].trim('\r').replace('/ru/','/').split(' ');//delete block replace('/ru/','/') when mistake in oData passport will be repaired
+            var listUrls = csvSecondLayer[8][3].trim('\r').split(' ');
             var downloadAndConvert=function(filename){
                 var fileAbsolutePath= dataPath+Path.basename(filename)
                 var convert=function(){charsetHelper.changeFileCharset(fileAbsolutePath,'cp1251','utf8');}
                 fileloaderHelper.downloadFileAndSaveToDirectoryByWget(listUrls[i],fileAbsolutePath,convert);
             }
+            
             for(var i = 0;i < listUrls.length;i++){
                 downloadAndConvert(listUrls[i]);
             }
@@ -37,7 +40,7 @@ function readRemoteFile(link, callback){
         uri: link,
         charset: 'utf8'
     }, function(error, response, body) {
-        callback(charsetHelper.cp1251ToUtf8(body));
+        callback(body);
     });
 };
 

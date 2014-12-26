@@ -26,13 +26,10 @@ function getFilelistByExtension(dataDir, extension) {
     var allFilesList = [];
     var fs = require('fs');
     var fileslist = fs.readdirSync(dataDir);
-    for (var i = 0; i < fileslist.length; i++) {
-        console.log(fileslist[i]);
-        if (fileslist[i].lastIndexOf("."+extension) != -1) {
-            allFilesList.push(fileslist[i]);
-        }
-    }
-    return allFilesList;
+    fileslist = fileslist.filter(function(element){
+        return element.lastIndexOf("."+extension)!=-1;
+    });
+    return fileslist;
 }
 
 module.exports = {
