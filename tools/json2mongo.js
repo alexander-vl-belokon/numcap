@@ -14,17 +14,7 @@ function convert() {
         var insertFileInDb = function (filename,callback) {
             var fileName = dataDirectory + filename;
             var fileContentAsJson = JSON.parse(fs.readFileSync(fileName, 'utf8'));
-            var convertedFileContentAsJson = fileContentAsJson.map(function (item) {
-                return  {
-                    "code": parseInt(item.code),
-                    "beginNumber": parseInt(item.beginNumber),
-                    "endNumber": parseInt(item.endNumber),
-                    "capacity": parseInt(item.capacity),
-                    "operator": item.operator,
-                    "region": item.region
-                };
-            });
-            collection.insert(convertedFileContentAsJson, function (err, result) {
+            collection.insert(fileContentAsJson, function (err, result) {
                 if (err) {
                     console.log(err);
                 } else {
