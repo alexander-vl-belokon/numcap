@@ -7,8 +7,7 @@ var request = require("request");
 
 function reloadFiles () {
 
-
-    var dataPath = 'data/';
+    var dataDirectory = 'download/';
     
     getnumberCapacityListCsvLinks(function (url) {
         var splitter = ';';
@@ -21,7 +20,7 @@ function reloadFiles () {
 
             var downloadAndConvert = function (filename) {
 
-                var fileAbsolutePath = dataPath + path.basename(filename);
+                var fileAbsolutePath = dataDirectory + path.basename(filename);
 
                 var convert = function(){
                     charsetHelper.changeFileCharset(fileAbsolutePath, 'cp1251', 'utf8');
