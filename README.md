@@ -2,11 +2,7 @@ numcap
 ======
 
 Phone numbers of all operators in Russian Federation
-
-*Possibilities*
-
-1. Find region by number
-2. Find phone operator by number
+Find region and phone operator by number
 
 
 Install
@@ -22,10 +18,6 @@ var numcap = require('numcap');
 var finder = new numcap({type: 'file', options: {dataDirectory: '../data'}});
 
 finder.getData("8-913-529-29-26", function (err, data) {
-    console.log(err, data);
-});
-
-finder.getData("56576567", function (err, data) {
     console.log(err, data);
 });
 
@@ -45,6 +37,18 @@ Update
 
 Use mongodb
 ===========
-load data to mongodb use ncli.j
+load data to mongodb use ncli.js
 
 > node ncli.js --json2mongo
+
+*example*
+`````
+var numcap = require('numcap');
+
+var finder = new numcap({type: 'mongo', options: {host: '192.168.1.1'}});
+
+finder.getData("8-913-529-29-26", function (err, data) {
+    console.log(err, data);
+});
+
+`````
