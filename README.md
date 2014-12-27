@@ -48,5 +48,3 @@ Use mongodb
 load data to mongodb use ncli.j
 
 > node ncli.js --json2mongo
-
-

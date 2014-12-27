@@ -20,3 +20,10 @@ q3.getData("56576567", function (err, data) {
 q3.getData("8-913-529-29-26", function (err, data) {
     console.log(err, data);
 });
+
+
+var q4 = new numcap({type: 'mongo'});
+
+q4.getData("8-913-529-29-26", function (err, data) {
+    console.log(err, data);
+});
