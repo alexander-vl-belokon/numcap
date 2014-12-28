@@ -6,9 +6,11 @@ Phone numbers of all operators in Russian Federation
 Find region and phone operator by number
 
 
+
 Install
 =======
 > npm install numcap --save
+
 
 
 Usage
@@ -25,14 +27,18 @@ finder.getData("8-913-529-29-26", function (err, data) {
 `````
 
 
+
 Update data
 ===========
 
 Numcap contain JSON files with data of resource, but you can use ncli.js for update data
 
-> node ncli.js --download
+Run from directory of your project
 
-> node ncli.js --csv2json
+> node ./node_modules/numcap/ncli.js --download
+
+> node ./node_modules/numcap/ncli.js --csv2json
+
 
 
 Use mongodb
@@ -40,7 +46,12 @@ Use mongodb
 
 Load data to mongodb use ncli.js
 
-> node ncli.js --json2mongo
+Run from directory of your project
+
+> npm install mongodb --save
+
+> node ./node_modules/numcap/ncli.js --json2mongo
+
 
 *Example*
 `````
