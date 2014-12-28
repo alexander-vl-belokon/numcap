@@ -30,8 +30,8 @@ Update data
 
 Numcap contain JSON files with data of resource, but you can use ncli.js for update data
 
-
 > node ncli.js --download
+
 > node ncli.js --csv2json
 
 
