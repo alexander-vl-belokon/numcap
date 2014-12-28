@@ -24,6 +24,16 @@ finder.getData("8-913-529-29-26", function (err, data) {
     console.log(err, data);
 });
 
+Output
+
+{ code: '913',
+  begin: '4900000',
+  end: '5399999',
+  capacity: '500000',
+  operator: 'Мобильные ТелеСистемы',
+  region: 'Красноярский край' }
+  
+
 `````
 
 
