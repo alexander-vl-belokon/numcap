@@ -18,13 +18,13 @@ Usage
 `````
 var numcap = require('numcap');
 
-var finder = new numcap({type: 'file', options: {dataDirectory: '../data'}});
+var finder = new numcap();
 
 finder.getData("8-913-529-29-26", function (err, data) {
     console.log(err, data);
 });
 
-Output
+Output data object:
 
 { code: '913',
   begin: '4900000',
@@ -32,7 +32,7 @@ Output
   capacity: '500000',
   operator: 'Мобильные ТелеСистемы',
   region: 'Красноярский край' }
-  
+
 
 `````
 
@@ -74,3 +74,10 @@ finder.getData("8-913-529-29-26", function (err, data) {
 });
 
 `````
+
+
+
+Links
+=====
+1. [Number resource of Russian phone operators](http://www.rossvyaz.ru/activity/num_resurs/)
+2. [Passport of open data](http://www.rossvyaz.ru/opendata/7710549038-Rosnumbase/)
