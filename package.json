@@ -4,7 +4,7 @@
   "description": "Russian phone operators resource",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,15 @@
   "bugs": {
     "url": "https://github.com/antirek/numcap/issues"
   },
-  "dependencies": {    
+  "dependencies": {
     "phone-number-format": "0.0.3"
   },
   "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-mocha-istanbul": "^2.2.0",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.1.0",
+    "mocha-istanbul": "^0.2.0",
     "request": "^2.51.0"
   }
 }

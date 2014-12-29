@@ -1,29 +1,21 @@
 
-var file = require('../lib/file');
-var mongo = require('../lib/mongo');
 var numcap = require('../lib/numcap');
 
+describe('Numcap', function(){
+  
+    it('all will be ok', function(done){
+        var finder = new numcap();
+        finder.getData("8-913-529-29-26", function (err, data) {
+            if (err) console.log(err);
+            done();
+        });
+    });
 
-var q1 = new file({dataDirectory: '../data'});
+    it('error in number', function(done){
+        var finder = new numcap();
+        finder.getData("8-913-529", function (err, data) {
+            if (err) done();
+        });
+    });
 
-q1.getData({code: '391', number: '2148000'}, function (err, data) {
-    console.log(err, data);
-});
-
-
-var q3 = new numcap({type: 'file', options: {dataDirectory: '../data'}});
-
-q3.getData("56576567", function (err, data) {
-    console.log(err, data);
-});
-
-q3.getData("8-913-529-29-26", function (err, data) {
-    console.log(err, data);
-});
-
-
-var q4 = new numcap({type: 'mongo'});
-
-q4.getData("8-913-529-29-26", function (err, data) {
-    console.log(err, data);
 });
