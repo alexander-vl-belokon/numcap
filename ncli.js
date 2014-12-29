@@ -62,10 +62,10 @@ function printHelp() {
     console.log('--download  \tdownload new .CSV files from http://www.rossvyaz.ru;');
     console.log('--csv2json  \tconvert .CSV files to .JSON files;');
     console.log('--json2mongo  \tsave .JSON files to MongoDB, addition options:');
-    console.log('\t--host  \thost of MongoDB (default: host=localhost);');
-    console.log('\t--db    \ta database name in MongoDB (default: db=capacity);');
-    console.log('\t--port  \ta binding port in MongoDB (default: port=27017);');
-    console.log('\t--collection  \ta collection name in MongoDB (default: collection=capacity).');
+    console.log('\t--host[=name]  \thost of MongoDB (default: host=localhost);');
+    console.log('\t--db[=name]    \ta database name in MongoDB (default: db=capacity);');
+    console.log('\t--port[=name]  \ta binding port in MongoDB (default: port=27017);');
+    console.log('\t--collection[=name]  \ta collection name in MongoDB (default: collection=capacity).');
 }
 
 main(process.argv);
