@@ -60,8 +60,13 @@ Run from directory of your project
 
 > npm install mongodb --save
 
+then with default options:
+
 > node ./node_modules/numcap/ncli.js --json2mongo
 
+or with additional options:
+
+> node ./node_modules/numcap/ncli.js --json2mongo --host=localhost --port=27017 --db=capacity --collection=capacity
 
 *Example*
 `````
