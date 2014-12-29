@@ -1,27 +1,28 @@
 {
   "name": "numcap",
-  "version": "0.0.0",
-  "description": "This package allow upload, store and search  in number capacity of telephone operators in Russian Federation.",
+  "version": "0.0.4",
+  "description": "Russian phone operators resource",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexander-vl-belokon/numcap.git"
+    "url": "https://github.com/antirek/numcap.git"
   },
   "keywords": [
     "numbers",
     "telephone",
-    "capacity"
+    "capacity",
+    "phone",
+    "Russia"
   ],
-  "author": "Alexander Belokon",
-  "license": "BSD-2-Clause",
+  "author": "Alexander Belokon, Dmitriev Sergey",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexander-vl-belokon/numcap/issues"
+    "url": "https://github.com/antirek/numcap/issues"
   },
-  "dependencies": {
-    "mongodb": "^1.4.26",
+  "dependencies": {    
     "phone-number-format": "0.0.3"
   },
   "devDependencies": {

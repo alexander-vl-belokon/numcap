@@ -1,79 +1,58 @@
-var fileloaderHelper = require('./helpers/fileloader.js');
-var csvHelper = require('./helpers/csv.js');
 var fs = require('fs');
+var downloadDirectory = 'download/';
+var dataDirectory = 'data/';
 
-schema = {
-    "code": "",
-    "beginNumber": "",
-    "endNumber": "",
-    "capacity": "",
-    "operator": "",
-    "region": ""
+function convert () {
+    var files = getCsvFiles(downloadDirectory);
+    for (var i = 0; i < files.length; i++) {
+        convertCsv2Json(files[i]);
+    }
 };
 
-function convert() {
-    var dataDir = 'data/';
-    var filesList = getCsvFileslist(dataDir);
-    for (var i = 0; i < filesList.length; i++) {
-        var filepath = dataDir + filesList[i];
-        convertCsvDataToJson(filepath);
-    }
-}
+function convertCsv2Json (filename) {
+    var csvfilepath = downloadDirectory + filename;
+    fs.readFile(csvfilepath, 'utf8', function (err, data) {       
+        if (err) throw err;
 
-function convertCsvDataToJson(filepath) {
-    fs.readFile(filepath, 'utf8', function (err, data) {
-        console.log(filepath);
-        if (err) {
-            return console.log(err);
-        }
-        else {
-            var csv = csvHelper.parseCsv(data, ';');
-            var jsonAccumulator = [];
-            for (i = 1; i < csv.length-1; i++) {
-                var objectCsvString = getObject(csv[i]);
-                jsonAccumulator.push(objectCsvString);
-            }
-            var jsonFile = JSON.stringify(jsonAccumulator, null, 2);
-            writeToFile(filepath.replace('.csv', '.json'), jsonFile);
-        }
+        var lines = data.split('\r\n');
+
+        var array = lines
+            .map(function (line, i) {
+                return line.split(';');
+            })
+            .map(function (array, i){
+                return getObject(array);
+            });
+
+        var json = JSON.stringify(array, null, 2);
+        var file = dataDirectory + filename.replace('.csv', '.json');
+        
+        fs.writeFile(file, json, function (err) {
+            if (!err) console.log("JSON saved to " + file);
+        });
+        
     });
-}
-function getCsvFileslist(dataDir) {
-    var csvFilesList = [];
-    var fs = require('fs');
-    var fileslist = fs.readdirSync(dataDir);
-    for (var i = 0; i < fileslist.length; i++) {
-        //console.log(fileslist[i]);
-        if (fileslist[i].lastIndexOf(".csv") != -1) {
-            csvFilesList.push(fileslist[i]);
-        }
-    }
-    return csvFilesList;
-}
+};
 
-function getObject(csvString) {
-    var object = {};
-    object['code'] = csvString[0];
-    object['beginNumber'] = csvString[1];
-    object['endNumber'] = csvString[2];
-    object['capacity'] = csvString[3];
-    object['operator'] = csvString[4];
-    object['region'] = String(csvString[5]).replace('\r', '');
-    return object;
-}
-
-function writeToFile(name, content) {
-    fs.writeFile(name, content, function (err) {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log("JSON saved to " + name);
-        }
+function getCsvFiles (dir) {        
+    var fileslist = fs.readdirSync(dir);
+    fileslist = fileslist.filter(function (element) {
+        return element.lastIndexOf(".csv") != -1
     });
-}
+    return fileslist;
+};
 
-module.exports = {
-    convertCsvDataToJson: convertCsvDataToJson,
-    getCsvFileslist: getCsvFileslist,
+function getObject (array) {
+    return {
+        code: array[0],
+        begin: array[1],
+        end: array[2],
+        capacity: array[3],
+        operator: array[4],
+        region: array[5]
+    };
+};
+
+module.exports = {    
     convert: convert
-}
+};

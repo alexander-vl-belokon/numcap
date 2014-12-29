@@ -1,3 +1,1 @@
-var numcap = require('./tools/numcap');
-
-module.exports = numcap;
+module.exports = require('./lib/numcap');
